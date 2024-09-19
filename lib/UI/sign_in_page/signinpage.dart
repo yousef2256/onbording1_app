@@ -43,7 +43,7 @@ class SignInPage extends StatelessWidget {
                               "sign in to access your account",
                               style: TextStyle(
                                   fontSize: 14.sp,
-                                  color: const Color(0xFF252525),
+                                  // color: const Color(0xFF252525),
                                   fontWeight: FontWeight.w300),
                             ),
                             SizedBox(height: 65.h),

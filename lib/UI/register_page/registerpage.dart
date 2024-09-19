@@ -43,7 +43,7 @@ class RegisterPage extends StatelessWidget {
                               "by creating a free account.",
                               style: TextStyle(
                                   fontSize: 14.sp,
-                                  color: const Color(0xFF252525),
+                                  // color: const Color(0xFF252525),
                                   fontWeight: FontWeight.w300),
                             ),
                             SizedBox(height: 65.h),
@@ -100,11 +100,11 @@ class RegisterPage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Text("New Member ?"),
+                        const Text("I have an account ?"),
                         TextButton(
                           onPressed: () {},
                           child: const Text(
-                            "Register Now",
+                            "Login",
                             style: TextStyle(
                               fontSize: 12,
                               color: Colors.blue,
