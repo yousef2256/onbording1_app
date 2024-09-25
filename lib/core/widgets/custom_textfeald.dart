@@ -17,7 +17,7 @@ class CustomTextFeald extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(bottom: 20.h),
       child: Container(
-        width: 300.w,
+        width: double.infinity,
         height: 50.h,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),

@@ -87,7 +87,7 @@ class RegisterPage extends StatelessWidget {
               ),
               //Login Button at the Bottom
               Padding(
-                padding: EdgeInsets.only(bottom: 20.h),
+                padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   children: [
                     CustomeBotton(
@@ -102,7 +102,9 @@ class RegisterPage extends StatelessWidget {
                       children: [
                         const Text("I have an account ?"),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            context.pushNamed(Routs.SignInPage);
+                          },
                           child: const Text(
                             "Login",
                             style: TextStyle(

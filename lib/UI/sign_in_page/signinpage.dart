@@ -65,23 +65,20 @@ class SignInPage extends StatelessWidget {
                               ),
                             ),
                             //forget password TextButton
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 10.w),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                children: [
-                                  TextButton(
-                                    onPressed: () {},
-                                    child: Text(
-                                      "Forget Password",
-                                      style: TextStyle(
-                                        fontSize: 12.sp,
-                                        color: Colors.blue,
-                                      ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "Forget Password",
+                                    style: TextStyle(
+                                      fontSize: 12.sp,
+                                      color: Colors.blue,
                                     ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ],
                         ),
@@ -91,37 +88,37 @@ class SignInPage extends StatelessWidget {
                 ),
               ),
               //Login Button at the Bottom
-              Padding(
-                padding: EdgeInsets.only(bottom: 20.h),
-                child: Column(
-                  children: [
-                    CustomeBotton(
+              Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: CustomeBotton(
                       onpressd: () {
                         context.pushNamed(Routs.HomePage);
                       },
                       bottontext: "Login",
                     ),
-                    //if don't have an account & Register Button
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text("New Member ?"),
-                        TextButton(
-                          onPressed: () {
-                            context.pushNamed(Routs.RegisterPage);
-                          },
-                          child: const Text(
-                            "Register Now",
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: Colors.blue,
-                            ),
+                  ),
+                  //if don't have an account & Register Button
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text("New Member ?"),
+                      TextButton(
+                        onPressed: () {
+                          context.pushNamed(Routs.RegisterPage);
+                        },
+                        child: const Text(
+                          "Register Now",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.blue,
                           ),
                         ),
-                      ],
-                    ),
-                  ],
-                ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ],
           ),
